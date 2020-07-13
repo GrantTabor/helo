@@ -26,7 +26,11 @@ massive({
       })
       .catch(err => console.log(err));
     
-app.post("/auth/register", controller.register);
+app.post("/api/register", controller.register);
+app.post("/api/login", controller.login);
+app.get("/api/logout", controller.logout);
+
+app.get("/api/posts", controller.getAllPosts), 
 
 app.listen(4000, ()=>{
     console.log(`Server is running on ${SERVER_PORT}`);

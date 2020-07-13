@@ -1,14 +1,21 @@
 import React, {Component} from "react";
-import Nav from "../Nav/Nav";
+
 export default class Post extends Component {
     constructor(props){
         super(props);
+        this.state = {
+            title: "",
+            img: "",
+            content: "",
+            author: "",
+            authorPicture: ""
+        }
     }
     render(){
         return(
             <div>
-                <Nav />
-                Post
+            
+                
             </div>
         )
     }

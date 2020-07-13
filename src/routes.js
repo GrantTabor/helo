@@ -13,7 +13,6 @@ export default(
         <Route path = "/dashboard" component={Dashboard}/>
         <Route path = "/post/:postid" component={Post}/>
         <Route path = "/new" component={Form}/>
-        <Route component={Nav}/>
     </Switch>
 
 )
