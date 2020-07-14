@@ -47,8 +47,10 @@ module.exports = {
     },
     getAllPosts: (req, res) =>{
         const db = req.app.get("db");
-
-        db.get_all_posts()
+        const {userid, filter} = req.query;
+        console.log(req.query)
+        console.log(userid)
+        db.posts.get_all_posts(userid)
         .then(posts => {
             res.status(200).send(posts);
         })
